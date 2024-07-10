@@ -1,5 +1,5 @@
 "use client"
-import './page.module.css';
+import styles from './page.module.css';
 import Titulo from '@/components/Titulo';
 import Subtitulo from '@/components/Subtitulo';
 import Cita from '@/components/Cita';
@@ -18,7 +18,7 @@ function App(props) {
           </div>
           <div className="one-half column">
             <Subtitulo texto="ADMINISTRA TUS CITAS" />
-            <div className="lista-cita">
+            <div className= {styles.listacita}>
                   {citas.map(c => <div className="cita"><Cita citas={citas} setCitas={setCitas} nombreMascota={c.mascota} nombreDueño={c.duenio} Fecha={c.fecha} Hora={c.hora} Sintomas={c.sintomas} id={c.id}></Cita></div>)}
               </div>
           </div>
