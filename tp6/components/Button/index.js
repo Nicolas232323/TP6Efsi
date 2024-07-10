@@ -1,13 +1,13 @@
 import React from 'react';
 import './Button.css';
-const Button = ({text = "default", type = "default", clase = "null", EliminarToDo}) => {
+const Button = ({text = "default", type = "default", clase = "null", EliminarCita}) => {
 if(clase === "button-elimnar u-full-width"){
-    <button onClick = {EliminarToDo} type={type} className={clase}>{text}</button>
+    <button onClick = {EliminarCita} type={type} className={clase}>{text}</button>
 }
 
 return(
 <>
-<button onClick = {EliminarToDo} type={type} className={clase}>{text}</button>
+<button onClick = {EliminarCita} type={type} className={clase}>{text}</button>
 </>
 )
     
